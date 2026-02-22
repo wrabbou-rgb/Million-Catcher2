@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development node server/index.js",
     "build": "node script/build.js",
-    "start": "NODE_ENV=production node dist/index.js"
+    "start": "NODE_ENV=production node server/index.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
