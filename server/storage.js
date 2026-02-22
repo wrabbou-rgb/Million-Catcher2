@@ -47,7 +47,7 @@ export class MemoryStorage {
     if (game) game.currentQuestionIndex = index;
   }
 
-  async addPlayer(gameId, socketId, name) {
+  async addPlayer(gameId, socketId, name, gradient = "from-purple-500 to-cyan-500") {
     const player = {
       id: nextPlayerId++,
       gameId,
@@ -59,6 +59,7 @@ export class MemoryStorage {
       lastAnswer: null,
       currentBet: {},
       hasConfirmed: false,
+	gradient,
     };
     playersMap.set(player.id, player);
     return player;
