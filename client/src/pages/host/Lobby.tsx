@@ -107,7 +107,7 @@ export default function Lobby() {
                   exit={{ opacity: 0, scale: 0.5 }}
                   className="group relative bg-card border border-white/10 p-4 rounded-xl flex flex-col items-center justify-center gap-2 shadow-lg"
                 >
-                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${(player as any).gradient || "from-purple-500 to-cyan-500"} flex items-center justify-center font-bold text-lg`} flex items-center justify-center font-bold text-lg`}
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${(player as any).gradient || "from-purple-500 to-cyan-500"} flex items-center justify-center font-bold text-lg`}
                     {player.name.charAt(0).toUpperCase()}
                   </div>
                   <span className="font-medium truncate max-w-[120px] text-center">
