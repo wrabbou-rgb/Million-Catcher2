@@ -107,7 +107,7 @@ export default function Lobby() {
                   exit={{ opacity: 0, scale: 0.5 }}
                   className="group relative bg-card border border-white/10 p-4 rounded-xl flex flex-col items-center justify-center gap-2 shadow-lg"
                 >
-                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${(player as any).gradient || "from-purple-500 to-cyan-500"} flex items-center justify-center font-bold text-lg`}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style={{background: {"from-red-500 to-orange-500": "linear-gradient(to right, #ef4444, #f97316)", "from-orange-500 to-yellow-500": "linear-gradient(to right, #f97316, #eab308)", "from-yellow-400 to-green-500": "linear-gradient(to right, #facc15, #22c55e)", "from-green-500 to-teal-500": "linear-gradient(to right, #22c55e, #14b8a6)", "from-teal-500 to-blue-500": "linear-gradient(to right, #14b8a6, #3b82f6)", "from-blue-500 to-indigo-500": "linear-gradient(to right, #3b82f6, #6366f1)", "from-indigo-500 to-purple-500": "linear-gradient(to right, #6366f1, #a855f7)", "from-purple-500 to-pink-500": "linear-gradient(to right, #a855f7, #ec4899)", "from-pink-500 to-red-500": "linear-gradient(to right, #ec4899, #ef4444)", "from-cyan-400 to-blue-600": "linear-gradient(to right, #22d3ee, #2563eb)"}[(player as any).gradient] || "linear-gradient(to right, #a855f7, #06b6d4)"}}}>
                     {player.name.charAt(0).toUpperCase()}
                   </div>
                   <span className="font-medium truncate max-w-[120px] text-center">
